@@ -271,6 +271,7 @@ export const adapterSettings: {
   maxTokens: AI_ADAPTERS.slice(),
   maxContextLength: AI_ADAPTERS.slice(),
   antiBond: ['openai', 'scale'],
+  appendReplyAsNameToUJB: ['openai', 'claude'],
 
   prefill: ['claude'],
 
@@ -311,7 +312,16 @@ export const adapterSettings: {
   presencePenalty: ['openai', 'kobold', 'novel', 'openai-chat'],
   streamResponse: ['openai', 'kobold', 'novel', 'claude', 'ooba', 'agnaistic', 'openai-chat'],
   openRouterModel: ['openrouter'],
-  stopSequences: ['ooba', 'agnaistic', 'novel', 'mancer', 'llamacpp', 'horde', 'exllamav2', 'kobold'],
+  stopSequences: [
+    'ooba',
+    'agnaistic',
+    'novel',
+    'mancer',
+    'llamacpp',
+    'horde',
+    'exllamav2',
+    'kobold',
+  ],
   trimStop: ['koboldcpp'],
 
   addBosToken: ['ooba', 'agnaistic'],
